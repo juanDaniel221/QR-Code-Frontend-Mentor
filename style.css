@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+:root {
+    --clr-neutral-100: hsl(0, 0%, 100%); 
+    --clr-neutral-400: hsl(212, 45%, 89%); 
+
+    --clr-primary-900: hsl(218, 44%, 22%);
+    --clr-secondary-400: hsl(220, 15%, 55%);
+    
+    --ff-base: 'Outfit', sans-serif; 
+    --fw-base: 400;
+    --fw-bold: 700; 
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+ 
+* {
+    margin: 0;
+}
+body {
+    height: 100%;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--ff-base);
+    font-size: 15px;
+    background-color: var(--clr-neutral-400);
+    display: grid;
+    place-content: center;  
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+p, h1 {
+    overflow-wrap: break-word;
+}
+
+article {
+    width: 300px;
+    background-color: var(--clr-neutral-100);
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.qr__img img {
+    border-radius: 0.5rem;
+}
+
+h1 {
+    padding: 1rem;
+    font-size: 1.28rem;
+    font-weight: var(--fw-bold);
+    line-height: 1.5rem;
+    text-align: center;
+    color: var(--clr-primary-900) 
+}
+
+p {
+    text-align: center;
+    color: var(--clr-secondary-400); 
+    font-weight: var(--fw-base);
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
